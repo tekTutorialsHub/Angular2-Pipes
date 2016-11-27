@@ -5,16 +5,19 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import {TempConverterPipe} from './temp-convertor.pipe';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,TempConverterPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
